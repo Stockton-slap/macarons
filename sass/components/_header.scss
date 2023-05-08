@@ -1,0 +1,84 @@
+.arranged {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+    .logo {
+        text-decoration: none;
+        font-weight: 700;
+        color: $tertiary-text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+
+    &__image {
+        width: 47px;
+        height: 47px;
+        border: 1px solid $tertiary-text-color;
+        border-radius: 50%;  
+        margin-right: 10px;
+        background-image: url('/images/macaron.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: $header-shadow;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 42px;
+        text-shadow: $header-shadow
+    }
+}
+
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    &__link:last-child::before {
+        content: url('../../images/phone.svg');    
+        margin-right: 5px;
+        filter: drop-shadow($header-shadow);
+    }
+
+    &__item {
+        list-style: none;
+        color: $tertiary-text-color;
+        font-family: $secondary-font;
+        font-size: 20px;
+        line-height: 27px;
+        text-shadow: $header-shadow
+    }
+}
+
+
+.bag-image {
+        width: 59px;
+        height: 59px;
+        background-color: $tertiary-text-color;
+        border-radius: 50%;
+        background-image: url('/images/bag.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: $header-shadow;
+    }
+
+
