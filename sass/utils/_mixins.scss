@@ -1,0 +1,7 @@
+@mixin descr ($size, $height, $secondary-font, $margin) {
+    font-size: $size;
+    line-height: $height;
+    margin: $margin;
+    padding: 0;
+    font-family: $secondary-font;
+}

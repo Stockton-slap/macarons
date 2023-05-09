@@ -1,9 +1,21 @@
+.background-wrapper {
+     height: 925px;
+         background-image: url("../../images/macaron1.png"),
+                 url("../../images/macaron2.png"),
+                 url("../../images/macaron3.png"), 
+                 url('../../images/macaron4.png'),
+                 url("../../images/macaron5.png"), $linear;
+         background-repeat: no-repeat;
+         background-position: bottom 171px left 134px, bottom 207px right 146px, top 170px left 50px, top 115px right 0, bottom, center;
+}
+
 .hero-title {
         font-size: 60px;
         line-height: 73px;
         color: $tertiary-text-color;    
         text-align: center;
         text-transform: uppercase;
+        margin: 152px 0 21px;
 }
 
 .hero-description {
@@ -11,5 +23,5 @@
     line-height: 27px;
     color: $tertiary-text-color;
     text-align: center;
-
+    margin: 0;
 }

@@ -1,9 +1,11 @@
 @import './utils/vars';
+@import './utils/mixins';
 
 @import './base/common';
 @import './base/normalize';
 
 @import './components/header';
-@import './components/hero'
+@import './components/hero';
+@import './components/advert'
 
 

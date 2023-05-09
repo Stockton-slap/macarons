@@ -1,9 +1,5 @@
 body {
   font-family: "Cormorant Garamond", serif;
-  height: 925px;
-  background-image: url("../../images/macaron1.png"), url("../../images/macaron2.png"), url("../../images/macaron3.png"), url("../../images/macaron4.png"), url("../../images/macaron5.png"), linear-gradient(180deg, #A6C1EE 0%, #FBC2EB 100%);
-  background-repeat: no-repeat;
-  background-position: bottom 171px left 134px, bottom 207px right 146px, top 170px left 50px, top 115px right 0, bottom, center;
 }
 
 .container {
@@ -313,24 +309,24 @@ summary {
 }
 .nav__link {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-.nav__link:not(:last-child) {
-  margin-right: 60px;
-}
-.nav__link:last-child::before {
-  content: url("../../images/phone.svg");
-  margin-right: 5px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.nav__item {
-  list-style: none;
   color: #FFFFFF;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 27px;
+}
+.nav__item {
+  list-style: none;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 60px;
+}
+.nav__item:last-child::before {
+  content: url("../../images/phone.svg");
+  margin-right: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .bag-image {
@@ -344,12 +340,20 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.background-wrapper {
+  height: 925px;
+  background-image: url("../../images/macaron1.png"), url("../../images/macaron2.png"), url("../../images/macaron3.png"), url("../../images/macaron4.png"), url("../../images/macaron5.png"), linear-gradient(180deg, #A6C1EE 0%, #FBC2EB 100%);
+  background-repeat: no-repeat;
+  background-position: bottom 171px left 134px, bottom 207px right 146px, top 170px left 50px, top 115px right 0, bottom, center;
+}
+
 .hero-title {
   font-size: 60px;
   line-height: 73px;
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  margin: 152px 0 21px;
 }
 
 .hero-description {
@@ -357,4 +361,72 @@ summary {
   line-height: 27px;
   color: #FFFFFF;
   text-align: center;
+  margin: 0;
+}
+
+.advert-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  margin: 39px 0 17px;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.advert-description {
+  text-align: center;
+  color: #747474;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 75px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  margin: 10px;
+}
+
+.advantages__image {
+  width: 110px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: #fbc2eb;
+  opacity: 0.3;
+  margin-right: 15px;
+}
+
+.advantages__wrapper {
+  flex: 1;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 7px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.advantages__description {
+  color: #656464;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=main.css.map */

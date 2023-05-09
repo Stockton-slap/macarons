@@ -41,31 +41,31 @@
 .nav {
     &__list {
         display: flex;
-    }
+}
 
     &__link {
         text-decoration: none;
-        display: flex;
-        align-items: center;
-    }
-
-    &__link:not(:last-child) {
-        margin-right: 60px;
-    }
-
-    &__link:last-child::before {
-        content: url('../../images/phone.svg');    
-        margin-right: 5px;
-        filter: drop-shadow($header-shadow);
-    }
-
-    &__item {
-        list-style: none;
         color: $tertiary-text-color;
         font-family: $secondary-font;
         font-size: 20px;
         line-height: 27px;
-        text-shadow: $header-shadow
+    }
+
+    &__item {
+        list-style: none;
+        text-shadow: $header-shadow;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    &__item:last-child::before {
+        content: url('../../images/phone.svg');
+        margin-right: 5px;
+        filter: drop-shadow($header-shadow);
     }
 }
 
