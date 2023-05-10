@@ -24,7 +24,7 @@
     margin-bottom: 35px;
 
     &::before {
-        content: url(../../images/arrow2.svg);
+        content: url('/images/arrow2.svg');
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,7 +35,7 @@
     }
 
     &::after {
-        content: url('../../images/arrow1.svg');
+        content: url('/images/arrow1.svg');
         display: flex;
         justify-content: center;
         align-items: center;
