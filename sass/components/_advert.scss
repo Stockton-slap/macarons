@@ -1,14 +1,12 @@
 .advert-title {
     text-transform: uppercase;
     text-align: center;
-    font-weight: 400;
-    @include descr(35px, 42px, $main-font, 39px 0 17px)
+    @include title(35px, 42px, $main-font, 39px 0 17px, 400)
 }
 
 .advert-description {
     text-align: center;
-    color: #747474;
-    @include descr(16px, 22px, $secondary-font, 0 0 75px)
+    @include description(16px, 22px, $secondary-font, 0 0 75px, $description-color)
 }
 
 .advantages {
@@ -17,6 +15,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 82px;
 }
 
 .advantages__item {
@@ -24,15 +23,29 @@
     align-items: center;
     flex-basis: 30%;
     margin: 10px;
+    padding: 7px 8px;
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+        border-radius: 30px;
+        background-color: rgba(217, 217, 217, 0.26);;
+    }
 }
 
-.advantages__image {
+.advantages__image-wrap {
     width: 110px;
     height: 104px;
     border-radius: 50%;
-    background-color: #fbc2eb;
-    opacity: 0.3;
+    background-color: $card-color;
     margin-right: 15px;
+    position: relative;
+}
+
+.advantages__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .advantages__wrapper {
@@ -40,11 +53,9 @@
 }
 
 .advantages__title {
-    font-weight: 400;
-    @include descr(20px, 27px, $secondary-font, 0 0 7px)
+    @include title(20px, 27px, $secondary-font, 0 0 7px, 400)
 }
 
 .advantages__description {
-    color: $advantages-section-text;
-    @include descr(16px, 22px, $secondary-font, 0)
+    @include description(16px, 22px, $secondary-font, 0, $advantages-section-text)
 }
