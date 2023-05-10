@@ -63,7 +63,7 @@
     }
 
     &__item:last-child::before {
-        content: url('../../images/phone.svg');
+        content: url('/images/phone.svg');
         margin-right: 5px;
         filter: drop-shadow($header-shadow);
     }
